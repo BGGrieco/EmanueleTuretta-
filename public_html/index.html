@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!--©Brian Grieco 2017-->
+<html>
+    <head>
+        <title>Emanuele Turetta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel="stylesheet" href="adaptive.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="functions.js"></script>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <div id="navStrip">
+            <img id="logo" src="resources/logo.png" style="width: 250px;" alt=""/>
+            <ul id="nav" class="nav navbar-nav">
+                <li><a href="#profile">Profilo</a></li>
+                <li><a href="#">Esperienza</a></li>
+                <li><a href="#">Riconoscimenti</a></li>
+                <li><a href="#">Contatti</a></li>
+            </ul>
+        </div>
+        <div id="slideshow">
+	    <img class="mySlides" src="resources/54.jpg" alt=""/>
+            <img class="mySlides" src="resources/elettra-Emanuele-Turetta-Christian-La-Rosa.jpg" alt=""/>
+            <img class="mySlides" src="resources/Agamennone-Emanuele-Turetta-Ilaria-Matilde-Vigna-1.jpg" alt=""/>
+        </div>
+        <!--PROFILE-->
+        <div id="profile">
+            <h1>EMANUELE TURETTA</h1>
+            <h2>ATTORE</h2>
+            <img src="resources/face.png" style="margin-top: 20px;" alt=""/>
+            <div id="bio">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                   et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                   aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                   officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        
+        
+<script>
+var slideIndex = 0;
+carousel();
+function carousel() 
+{
+	"use strict";
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) 
+	{
+        x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) 
+	{
+		slideIndex = 1;
+	} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 4000); 
+}
+</script>
+    </body>
+</html>
