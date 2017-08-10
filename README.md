@@ -3,4 +3,4 @@ Personal Website for actor Emanuele Turetta.
 
 A website I am building for a theater actor I know. Still in early stages.
 
-{<3}Made in Grieco{<3}
+{<3} Made in Grieco {<3}
