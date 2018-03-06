@@ -13,6 +13,13 @@ html, body
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: "arial";
+}
+
+a 
+{
+    text-decoration: none;
+    color: black;
 }
 
 #navStrip
@@ -64,33 +71,174 @@ html, body
     z-index: -1;
 }
 
-#profile
+#container
 {
     display: block;
     position: absolute;
     left: 0;
     width: 100%;
-    height: 1080px;
-    background-image: url("resources/bckground.jpg");
     top: 100%;
-    text-align: center;
     z-index: -1;
 }
 
-#profile h1, h2
+#name
 {
     padding-top: 70px;
-    font-family: "papyrus";
-    font-weight: lighter;
+    font-size: 35px;
+    font-family: "arial";
     line-height: 5%;
+    font-weight: normal;
 }
 
-#bio
+#prof
+{
+    font-size: 25px;
+    padding-top: 30px;
+    font-family: "arial";
+    line-height: 5%;
+    font-weight: normal;
+}
+
+.details
 {
     display: block;
-    width: 50%;
+    width: 60%;
+    padding-top: 30px;
     margin: 0 auto;
     text-align: justify;
     font-family: "arial";
-    font-weight: lighter;
+    padding-bottom: 50px;
 }
+
+#profile
+{
+    position: relative;
+    left: 0;
+    width: 100%;
+    background-image: url("resources/bckground.jpg");
+    text-align: center;
+}
+
+#experience
+{
+    position: relative;
+    left: 0;
+    width: 100%;
+    top: -35px;
+    background-image: url("resources/bckground.jpg");
+    text-align: center;
+    height: 1000px;
+}
+
+#exp
+{
+    padding-top: 70px;
+    font-size: 35px;
+    font-family: "arial";
+    line-height: 5%;
+    font-weight: normal;
+}
+
+#showContainer
+{
+    position: relative;
+    margin: auto;
+    width: 60%;
+}
+
+.leftImage
+{
+    position: absolute;
+    left: 0px;  
+}
+
+.rightImage
+{
+    position: absolute;
+    right: 0px;  
+}
+
+#altro
+{
+   position: absolute;
+   top: 350px;
+}
+
+#altroAncora
+{
+   position: absolute;
+   top: 350px;
+   right: 0px;
+}
+
+.cover
+{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.8;
+    transform: scale(0,0);
+}
+
+.coverR
+{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.8;
+    transform: scale(0,0);
+}
+
+.cover h3
+{
+    position: relative;
+    top: 60px;
+    font-size: 24px;
+}
+
+.cover p
+{
+    position: relative;
+    top: 80px;
+    font-size: 20px;
+}
+
+.coverR h3
+{
+    position: relative;
+    top: 60px;
+    font-size: 24px;
+}
+
+.coverR p
+{
+    position: relative;
+    top: 80px;
+    font-size: 20px;
+}
+
+.coverOn
+{
+    animation: pop 0.1s ease; 
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes pop
+{
+    0%
+    {
+       transform: scale(0,0); 
+    }
+    100%
+    {
+        transform: scale(1,1);
+    }
+}
+

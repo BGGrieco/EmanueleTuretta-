@@ -11,60 +11,123 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link  rel="stylesheet" href="adaptive.css" type="text/css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="functions.js"></script>
     </head>
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <body>
+        <!--NAVIGATION BAR-->
         <div id="navStrip">
             <img id="logo" src="resources/logo.png" style="width: 250px;" alt=""/>
-            <ul id="nav" class="nav navbar-nav">
+            <ul id="nav">
                 <li><a href="#profile">Profilo</a></li>
-                <li><a href="#">Esperienza</a></li>
+                <li><a href="#experience">Esperienza</a></li>
                 <li><a href="#">Riconoscimenti</a></li>
                 <li><a href="#">Contatti</a></li>
             </ul>
         </div>
+        
+        <!--SLIDESHOW-->
         <div id="slideshow">
 	    <img class="mySlides" src="resources/54.jpg" alt=""/>
             <img class="mySlides" src="resources/elettra-Emanuele-Turetta-Christian-La-Rosa.jpg" alt=""/>
             <img class="mySlides" src="resources/Agamennone-Emanuele-Turetta-Ilaria-Matilde-Vigna-1.jpg" alt=""/>
         </div>
-        <!--PROFILE-->
-        <div id="profile">
-            <h1>EMANUELE TURETTA</h1>
-            <h2>ATTORE</h2>
-            <img src="resources/face.png" style="margin-top: 20px;" alt=""/>
-            <div id="bio">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                   et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                   aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                   officia deserunt mollit anim id est laborum.</p>
+        
+        <div id="container">
+            <!--PROFILE-->
+            <div id="profile">
+                <p id="name">EMANUELE TURETTA</p>
+                <p id="prof">ATTORE</p>
+                <img src="resources/face.png" style="margin-top: 20px;" alt=""/>
+                <div class="details">
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                    officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        
+            <!--EXPERIENCE-->
+            <div id="experience">
+                <p id="exp">Esperienza</p>
+                <div class="details">
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                    officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <!--SHOWS-->
+                <div id="showContainer">
+                    
+                    <div class="expImage" id="sestasi">
+                        <img class="leftImage" src="resources/sestasiOne.png" width="300" alt=""/>
+                        <a href="https://www.youtube.com/watch?v=J2vUGHQc_Rk" target="_blank">
+                            <div id="one" class="cover">
+                                <h3>Santa Estasi</h3>
+                                <p>Spettacolo vincitore<br>premio UBU 2016.</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="expImage" id="delia">
+                        <img class="rightImage" src="resources/corradino.png" width="300" alt=""/>
+                        <a href="https://www.youtube.com/watch?v=J2vUGHQc_Rk" target="_blank">
+                            <div id="two" class="coverR">
+                                <h3>Romeo e Giulietta</h3>
+                                <p>Regia di<br>Corrado D'Elia</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="expImage" id="altro">
+                        <img class="leftImage" src="resources/sestasiOne.png" width="300" alt=""/>
+                        <a href="https://www.youtube.com/watch?v=J2vUGHQc_Rk" target="_blank">
+                            <div id="three" class="cover">
+                                <h3>DIO</h3>
+                                <p>Spettacolo vincitore<br>premio UBU 2016.</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="expImage" id="altroAncora">
+                        <img class="rightImage" src="resources/corradino.png" width="300" alt=""/>
+                        <a href="https://www.youtube.com/watch?v=J2vUGHQc_Rk" target="_blank">
+                            <div id="four" class="coverR">
+                                <h3>BANANA</h3>
+                                <p>Regia di<br>Corrado D'Elia</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         
-        
-<script>
-var slideIndex = 0;
-carousel();
-function carousel() 
-{
-	"use strict";
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) 
-	{
-        x[i].style.display = "none"; 
-    }
-    slideIndex++;
-    if (slideIndex > x.length) 
-	{
+        <script>
+        var slideIndex = 0;
+        carousel();
+        function carousel() 
+        {
+            "use strict";
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) 
+            {
+                x[i].style.display = "none"; 
+            }
+            slideIndex++;
+            if (slideIndex > x.length) 
+            {
 		slideIndex = 1;
-	} 
-    x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 4000); 
-}
-</script>
+            } 
+            x[slideIndex-1].style.display = "block"; 
+            setTimeout(carousel, 4000); 
+        }
+        </script>
     </body>
 </html>
