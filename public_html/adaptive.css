@@ -114,6 +114,7 @@ a
 {
     position: relative;
     left: 0;
+    padding-top: 10px;
     width: 100%;
     background-image: url("resources/bckground.jpg");
     text-align: center;
@@ -125,6 +126,8 @@ a
     left: 0;
     width: 100%;
     top: -35px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     background-image: url("resources/bckground.jpg");
     text-align: center;
     height: 1000px;
@@ -188,7 +191,7 @@ a
     position: absolute;
     width: 300px;
     height: 300px;
-    left: 0px;
+    right: 0px;
     border-radius: 50%;
     background-color: white;
     opacity: 0.8;
@@ -242,3 +245,23 @@ a
     }
 }
 
+#showreel
+{
+    position: relative;
+    left: 0;
+    width: 100%;
+    top: -35px;
+    padding-top: 10px;
+    background-image: url("resources/bckground.jpg");
+    text-align: center;
+    height: 1000px;
+}
+
+#reel
+{
+    padding-top: 70px;
+    font-size: 35px;
+    font-family: "arial";
+    line-height: 5%;
+    font-weight: normal;
+}
