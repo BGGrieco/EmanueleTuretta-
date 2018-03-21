@@ -245,6 +245,25 @@ a
     }
 }
 
+#merits
+{
+    position: relative;
+    left: 0;
+    padding-top: 10px;
+    width: 100%;
+    background-image: url("resources/bckground.jpg");
+    text-align: center;
+}
+
+#rico
+{
+    padding-top: 70px;
+    font-size: 35px;
+    font-family: "arial";
+    line-height: 5%;
+    font-weight: normal;
+}
+
 #showreel
 {
     position: relative;
