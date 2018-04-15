@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 24-Apr-2017, 12:11:15
     Author     : Brian
 */
@@ -16,7 +16,7 @@ html, body
     font-family: "arial";
 }
 
-a 
+a
 {
     text-decoration: none;
     color: black;
@@ -110,13 +110,23 @@ a
     padding-bottom: 50px;
 }
 
+.titles
+{
+    padding-top: 70px;
+    font-size: 35px;
+    font-family: "arial";
+    line-height: 5%;
+    font-weight: normal;
+}
+
 #profile
 {
     position: relative;
     left: 0;
     padding-top: 10px;
     width: 100%;
-    background-image: url("resources/bckground.jpg");
+    background-color: #e4e4e4;
+    /*background-image: url("resources/bckground.jpg");*/
     text-align: center;
 }
 
@@ -133,15 +143,6 @@ a
     height: 1000px;
 }
 
-#exp
-{
-    padding-top: 70px;
-    font-size: 35px;
-    font-family: "arial";
-    line-height: 5%;
-    font-weight: normal;
-}
-
 #showContainer
 {
     position: relative;
@@ -152,13 +153,13 @@ a
 .leftImage
 {
     position: absolute;
-    left: 0px;  
+    left: 0px;
 }
 
 .rightImage
 {
     position: absolute;
-    right: 0px;  
+    right: 0px;
 }
 
 #altro
@@ -228,7 +229,7 @@ a
 
 .coverOn
 {
-    animation: pop 0.1s ease; 
+    animation: pop 0.1s ease;
     animation-fill-mode: forwards;
     cursor: pointer;
 }
@@ -237,7 +238,7 @@ a
 {
     0%
     {
-       transform: scale(0,0); 
+       transform: scale(0,0);
     }
     100%
     {
@@ -249,19 +250,13 @@ a
 {
     position: relative;
     left: 0;
-    padding-top: 10px;
     width: 100%;
+    top: -35px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     background-image: url("resources/bckground.jpg");
     text-align: center;
-}
-
-#rico
-{
-    padding-top: 70px;
-    font-size: 35px;
-    font-family: "arial";
-    line-height: 5%;
-    font-weight: normal;
+    height: 350px;
 }
 
 #showreel
@@ -276,11 +271,15 @@ a
     height: 1000px;
 }
 
-#reel
+#contact
 {
-    padding-top: 70px;
-    font-size: 35px;
-    font-family: "arial";
-    line-height: 5%;
-    font-weight: normal;
+    position: relative;
+    left: 0;
+    width: 100%;
+    top: -35px;
+    bottom: 0px;
+    padding-top: 10px;
+    background-image: url("resources/bckground.jpg");
+    text-align: center;
+    height: 500px;
 }
