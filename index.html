@@ -1,161 +1,140 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Emanuele Turetta</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="Sito ufficiale di Emanuele turetta, attore. <br />Official website of Italian actor Emanuele Turetta.">
-        <meta name="keywords" content="Attore,Actor">
-        <meta name="author" content="Brian G. Grieco">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link  rel="stylesheet" href="adaptive.css" type="text/css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-        <script src="functions.js"></script>
-    </head>
-    <body>
-        <!--NAVIGATION BAR-->
-        <div id="navStrip">
-            <img id="logo" src="resources/logo.png" style="width: 250px;" alt=""/>
-            <ul id="nav">
-                <li><a href="#profile">Profilo</a></li>
-                <li><a href="#experience">Esperienza</a></li>
-                <li><a href="#merits">Riconoscimenti</a></li>
-                <li><a href="#showreel">Showreel</a></li>
-                <li><a href="#contact">Contatti</a></li>
-            </ul>
-        </div>
+  <head>
+    <title>Emanuele Turetta</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sito ufficiale di Emanuele turetta, attore. <br />Official website of Italian actor Emanuele Turetta.">
+    <meta name="keywords" content="Attore,Actor">
+    <meta name="author" content="Brian G. Grieco">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link  rel="stylesheet" href="css/adaptive.css" type="text/css">
+    <script src="js/zepto.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <!--NAVIGATION BAR-->
+    <div id="navStrip">
+      <img id="logo" src="resources/logo.png" alt=""/>
+      <ul id="nav">
+        <li><a href="#profile">Profilo</a></li>
+        <li><a href="#experience">Esperienza</a></li>
+        <li><a href="#merits">Riconoscimenti</a></li>
+        <li><a href="#showreel">Showreel</a></li>
+        <li><a href="#contact">Contatti</a></li>
+      </ul>
+    </div>
 
-        <!--SLIDESHOW-->
-        <div id="slideshow">
+    <!--SLIDESHOW-->
+    <div id="slideshow">
 	    <img class="mySlides" src="resources/54.jpg" alt=""/>
-            <img class="mySlides" src="resources/elettra-Emanuele-Turetta-Christian-La-Rosa.jpg" alt=""/>
-            <img class="mySlides" src="resources/Agamennone-Emanuele-Turetta-Ilaria-Matilde-Vigna-1.jpg" alt=""/>
+      <img class="mySlides" src="resources/elettra-Emanuele-Turetta-Christian-La-Rosa.jpg" alt=""/>
+      <img class="mySlides" src="resources/Agamennone-Emanuele-Turetta-Ilaria-Matilde-Vigna-1.jpg" alt=""/>
+    </div>
+
+    <div id="container">
+    <!--PROFILE-->
+    <div id="profile">
+      <img src="resources/masks2.png" alt=""/>
+      <p id="name">EMANUELE TURETTA</p>
+      <p id="prof">ATTORE</p>
+      <img src="resources/face.png" alt=""/>
+      <div class="details">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+         aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+         officia deserunt mollit anim id est laborum.
+       </p>
+      </div>
+    </div>
+
+    <!--EXPERIENCE-->
+      <div id="experience">
+        <p class="titles">Esperienza</p>
+        <div class="details">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum.
+          </p>
         </div>
+        <!--Shows-->
+        <div id="showContainer">
 
-        <div id="container">
-            <!--PROFILE-->
-            <div id="profile">
-                <p id="name">EMANUELE TURETTA</p>
-                <p id="prof">ATTORE</p>
-                <img src="resources/face.png" style="margin-top: 20px;" alt=""/>
-                <div class="details">
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-            </div>
+          <div class="expImage" id="sestasi">
+            <img class="leftImage" src="resources/sestasiOne.png" width="300" alt=""/>
+            <a href="https://www.youtube.com/watch?v=J2vUGHQc_Rk" target="_blank">
+              <div id="one" class="cover">
+                <h3>Santa Estasi</h3>
+                <p>Spettacolo vincitore<br>premio UBU 2016.
+                <br><br>Regia di<br>Antonio Latella</p>
+              </div>
+            </a>
+          </div>
 
-            <!--EXPERIENCE-->
-            <div id="experience">
-                <p class="titles">Esperienza</p>
-                <div class="details">
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <!--Shows-->
-                <div id="showContainer">
+          <div class="expImage" id="delia">
+            <img class="rightImage" src="resources/corradino.png" width="300" alt=""/>
+            <a href="https://www.youtube.com/watch?v=J2vUGHQc_Rk" target="_blank">
+              <div id="two" class="coverR">
+                <h3>Romeo e Giulietta</h3>
+                <p>Regia di<br>Corrado D'Elia</p>
+              </div>
+            </a>
+          </div>
 
-                    <div class="expImage" id="sestasi">
-                        <img class="leftImage" src="resources/sestasiOne.png" width="300" alt=""/>
-                        <a href="https://www.youtube.com/watch?v=J2vUGHQc_Rk" target="_blank">
-                            <div id="one" class="cover">
-                                <h3>Santa Estasi</h3>
-                                <p>Spettacolo vincitore<br>premio UBU 2016.
-                                <br><br>Regia di<br>Antonio Latella</p>
-                            </div>
-                        </a>
-                    </div>
+          <div class="expImage" id="altro">
+            <img class="leftImage" src="resources/angeli.png" width="300" alt=""/>
+            <a href="https://www.youtube.com/watch?v=J2vUGHQc_Rk" target="_blank">
+              <div id="three" class="cover">
+                <h3>DIO</h3>
+                <p>Spettacolo vincitore<br>premio UBU 2016.</p>
+              </div>
+            </a>
+          </div>
 
-                    <div class="expImage" id="delia">
-                        <img class="rightImage" src="resources/corradino.png" width="300" alt=""/>
-                        <a href="https://www.youtube.com/watch?v=J2vUGHQc_Rk" target="_blank">
-                            <div id="two" class="coverR">
-                                <h3>Romeo e Giulietta</h3>
-                                <p>Regia di<br>Corrado D'Elia</p>
-                            </div>
-                        </a>
-                    </div>
+          <div class="expImage" id="altroAncora">
+            <img class="rightImage" src="resources/ticket.png" width="300" alt=""/>
+            <a href="https://www.youtube.com/watch?v=J2vUGHQc_Rk" target="_blank">
+              <div id="four" class="coverR">
+                <h3>BANANA</h3>
+                <p>Regia di<br>Corrado D'Elia</p>
+              </div>
+            </a>
+          </div>
 
-                    <div class="expImage" id="altro">
-                        <img class="leftImage" src="resources/angeli.png" width="300" alt=""/>
-                        <a href="https://www.youtube.com/watch?v=J2vUGHQc_Rk" target="_blank">
-                            <div id="three" class="cover">
-                                <h3>DIO</h3>
-                                <p>Spettacolo vincitore<br>premio UBU 2016.</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="expImage" id="altroAncora">
-                        <img class="rightImage" src="resources/ticket.png" width="300" alt=""/>
-                        <a href="https://www.youtube.com/watch?v=J2vUGHQc_Rk" target="_blank">
-                            <div id="four" class="coverR">
-                                <h3>BANANA</h3>
-                                <p>Regia di<br>Corrado D'Elia</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!--RICONOSCIMENTI-->
-            <div id="merits">
-                <p class="titles">Riconoscimenti</p>
-                <div class="details">
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-            </div>
-
-            <!--SHOWREEL-->
-            <div id="showreel">
-                <p class="titles">Showreel</p>
-                <iframe src="https://player.vimeo.com/video/244617118" width="920" height="518"></iframe>
-            </div>
-
-            <!--CONTATTI-->
-            <div id="contact">
-                <p class="titles">Contatti</p>
-                <div class="details">
-                  <p>ema.turetta@gmail.com</p>
-                  <p>(+39) 340 3882961</p>
-                </div>
-            </div>
         </div>
+      </div>
 
-        <script>
-        var slideIndex = 0;
-        carousel();
-        function carousel()
-        {
-            "use strict";
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++)
-            {
-                x[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > x.length)
-            {
-		slideIndex = 1;
-            }
-            x[slideIndex-1].style.display = "block";
-            setTimeout(carousel, 4000);
-        }
-        </script>
-    </body>
+      <!--RICONOSCIMENTI-->
+      <div id="merits">
+        <p class="titles">Riconoscimenti</p>
+        <div class="details">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+
+      <!--SHOWREEL-->
+      <div id="showreel">
+        <p class="titles">Showreel</p>
+        <iframe src="https://player.vimeo.com/video/244617118" width="920" height="518"></iframe>
+      </div>
+
+      <!--CONTATTI-->
+      <div id="contact">
+        <p class="titles">Contatti</p>
+        <div class="details">
+          <a href="mailto:ema.turetta@gmail.com">ema.turetta@gmail.com</p>
+          <p>(+39) 340 3882961</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/functions.js"></script>
+  </body>
 </html>

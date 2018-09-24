@@ -1,0 +1,294 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 24-Apr-2017, 12:11:15
+    Author     : Brian
+*/
+html, body
+{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+a
+{
+  text-decoration: none;
+  color: black;
+}
+
+p
+{
+  font-size: 18px;
+}
+
+#navStrip
+{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+}
+
+#logo
+{
+  padding: 15px 0px 0px 10px;
+  width: 250px;
+}
+
+#nav
+{
+  position: fixed;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  top: -2px;
+}
+
+#nav li
+{
+  display: inline-block;
+}
+
+#nav a
+{
+  text-decoration: none;
+  padding: 10px;
+  font-family: "verdana";
+  color: #bdbdbd;
+}
+
+#nav a:hover
+{
+  color: #000000;
+}
+
+#slideshow img
+{
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#container
+{
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 100%;
+  z-index: -1;
+}
+
+#name
+{
+  padding-top: 20px;
+  font-size: 35px;
+  line-height: 5%;
+  font-weight: normal;
+}
+
+#prof
+{
+  font-size: 25px;
+  padding-top: 10px;
+  line-height: 5%;
+  font-weight: normal;
+}
+
+.details
+{
+  display: block;
+  width: 60%;
+  padding-top: 30px;
+  margin: 0 auto;
+  text-align: justify;
+  padding-bottom: 50px;
+}
+
+.titles
+{
+  padding-top: 70px;
+  font-size: 35px;
+  line-height: 5%;
+  font-weight: normal;
+}
+
+#profile
+{
+  position: relative;
+  left: 0;
+  padding-top: 10px;
+  width: 100%;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+#profile img
+{
+  width: 300px;
+  margin-top: 20px;
+}
+
+#experience
+{
+  position: relative;
+  left: 0;
+  width: 100%;
+  top: -35px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  height: 1000px;
+  background-color: #f0f0f0;
+  border-top: 2px solid #606060;
+}
+
+#showContainer
+{
+  position: relative;
+  margin: auto;
+  width: 60%;
+}
+
+.leftImage
+{
+  position: absolute;
+  left: 0px;
+}
+
+.rightImage
+{
+  position: absolute;
+  right: 0px;
+}
+
+#altro
+{
+  position: absolute;
+  top: 350px;
+}
+
+#altroAncora
+{
+  position: absolute;
+  top: 350px;
+  right: 0px;
+}
+
+.cover
+{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 0px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.8;
+  transform: scale(0,0);
+}
+
+.coverR
+{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: 0px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.8;
+  transform: scale(0,0);
+}
+
+.cover h3
+{
+  position: relative;
+  top: 60px;
+  font-size: 24px;
+}
+
+.cover p
+{
+  position: relative;
+  top: 80px;
+  font-size: 20px;
+}
+
+.coverR h3
+{
+  position: relative;
+  top: 60px;
+  font-size: 24px;
+}
+
+.coverR p
+{
+  position: relative;
+  top: 80px;
+  font-size: 20px;
+}
+
+.coverOn
+{
+  animation: pop 0.1s ease;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+@keyframes pop
+{
+  0%
+  {
+      transform: scale(0,0);
+  }
+  100%
+  {
+      transform: scale(1,1);
+  }
+}
+
+#merits
+{
+  position: relative;
+  left: 0;
+  width: 100%;
+  top: -35px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  height: 350px;
+  background-color: #f0f0f0;
+}
+
+#showreel
+{
+  position: relative;
+  left: 0;
+  width: 100%;
+  top: -35px;
+  padding-top: 10px;
+  text-align: center;
+  height: 1000px;
+  background-color: #f0f0f0;
+}
+
+#contact
+{
+  position: relative;
+  left: 0;
+  width: 100%;
+  top: -35px;
+  bottom: 0px;
+  padding-top: 10px;
+  text-align: center;
+  height: 500px;
+  background-color: #f0f0f0;
+}
